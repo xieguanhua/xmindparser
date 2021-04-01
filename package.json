@@ -1,0 +1,28 @@
+{
+  "name": "xmindparser",
+  "version": "1.0.0",
+  "description": "xmind解析为kityminder json格式，与kityminder json转xmind格式（支持浏览器）",
+  "main": "./index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tobyqin/xmindparser/commit/3ae8e3a5e8dda71bab3bb958356cb3ae037c0c35"
+  },
+  "keywords": [
+    "xmind",
+    "json",
+    "kityminder",
+    "naotu"
+  ],
+  "author": "guanhuaxie <15989449409@163.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jszip": "^3.6.0",
+    "mocha": "^8.3.2",
+    "request": "^2.88.2",
+    "xml-formatter": "^2.4.0",
+    "xml-js": "^1.6.11"
+  }
+}
