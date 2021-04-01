@@ -19,7 +19,6 @@
   "author": "guanhuaxie <15989449409@163.com>",
   "license": "MIT",
   "dependencies": {
-    "image-size": "^0.9.7",
     "jszip": "^3.6.0",
     "mocha": "^8.3.2",
     "request": "^2.88.2",
