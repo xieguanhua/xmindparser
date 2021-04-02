@@ -4,11 +4,12 @@
   "description": "xmind解析为kityminder json格式，与kityminder json转xmind格式（支持浏览器）",
   "main": "./index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "pub": "npm publish"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tobyqin/xmindparser/commit/3ae8e3a5e8dda71bab3bb958356cb3ae037c0c35"
+    "url": "https://github.com/xieguanhua/xmindParser"
   },
   "keywords": [
     "xmind",
