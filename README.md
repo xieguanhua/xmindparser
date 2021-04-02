@@ -1,11 +1,11 @@
-xmindParser
+xmindparser
 =========
 
 一个简单的javascript模块，用于Xmind 双向格式转换
 
 安装
 ============
-使用（[npm](http://npmjs.org)）源安装，npm install xmindParser
+使用（[npm](http://npmjs.org)）源安装，npm install xmindparser
 
 可用脚本
 ============
@@ -18,8 +18,8 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 ============
 ### `xmind转json`
  ```javascript
- const xmindParser = require('xmindParser');
-let parser = new xmindParser()
+ const xmindparser = require('xmindparser');
+let parser = new xmindparser()
 //xmind转脑图 json 支持二进制文件或url和本地目录
 const fileOrPath = 'test.xmind' 
  parser.xmindToJSON(fileOrPath).then(json => {
@@ -28,8 +28,8 @@ const fileOrPath = 'test.xmind'
 ```
 ### `json转xmind`
  ```javascript
- const xmindParser = require('xmindParser');
-let parser = new xmindParser()
+ const xmindparser = require('xmindparser');
+let parser = new xmindparser()
 const json = {
     "template": "default",
     "theme": "fresh-blue",
