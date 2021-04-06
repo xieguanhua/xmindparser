@@ -1,6 +1,6 @@
 {
   "name": "xmindparser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "xmind解析为kityminder json格式，与kityminder json转xmind格式（支持浏览器）",
   "main": "./index.js",
   "scripts": {
