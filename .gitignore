@@ -1,2 +1,13 @@
+.DS_Store
+.thumbs.db
 node_modules
+
+/dist
+yarn-debug.log*
+yarn-error.log*
+
 .idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
