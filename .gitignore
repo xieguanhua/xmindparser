@@ -1,13 +1,7 @@
-.DS_Store
-.thumbs.db
+.idea
 node_modules
 
+/lib
 /dist
 yarn-debug.log*
 yarn-error.log*
-
-.idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
