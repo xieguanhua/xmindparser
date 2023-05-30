@@ -3,7 +3,6 @@ import {Constructor} from './types'
 import xmindToJSON from './json-to-xmind'
 import JSONToXmind from './xmind-to-json'
 
-
 function copyProperties(target: object, source: object) {
     for (const key of Reflect.ownKeys(source)) {
         // 这些属性会影响继承的基类，避开不继承
@@ -29,6 +28,4 @@ function Mixin<T extends Constructor[]>(...mixins: T) {
     }
     return Mix;
 }
-
-const parse: Constructor = Mixin(xmindToJSON, JSONToXmind)
-export default parse
+export default Mixin(xmindToJSON, JSONToXmind) as Constructor
