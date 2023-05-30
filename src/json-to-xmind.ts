@@ -35,7 +35,7 @@ export default class parser {
         const topic = new Topic({sheet: workbook.createSheet(outFileName, text)})
         //设置额外的标记属性，如链接，图片，进度等
         const setMarker = (data: RootData, cid?: string) => {
-            const {priority, progress = 0, note} = data || {}
+            const {priority, progress = 0, note} = data || {note:''}
             topic.on(cid).marker(this.marker.priority(priority))
                 //任务进度
                 .marker(this.marker.task(task[progress - 1]))
