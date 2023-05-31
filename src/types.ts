@@ -1,3 +1,4 @@
+import JSZip from 'jszip'
 export interface ImageSize {
     width?: number,
     height?: number
@@ -5,7 +6,7 @@ export interface ImageSize {
 
 export interface RootData {
     text?: string,
-    note: string,
+    note?: string,
     imageSize?: ImageSize,
     id?: string,
     priority?: string,
@@ -39,6 +40,14 @@ export interface imageBase {
      * @type string
      */
     base64: string
+    width?:number
+    height?:number
     name: string
 }
+
+export type ImageItem = imageBase|null
+export type ImageDataType =  { [key:string]:imageBase }
+
+export type ZipFileType = { [key: string]: any }
 export type Constructor<T = Record<string, any>> = new (...args: any[]) => T;
+

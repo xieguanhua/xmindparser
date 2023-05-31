@@ -7,7 +7,7 @@ export type Utils = Promise<Buffer>
  * The node environment
  * node环境
  */
-export const isClient = (typeof process === 'object' &&
+export const isServer = (typeof process === 'object' &&
     typeof require === 'function' &&
     typeof global === 'object')
 

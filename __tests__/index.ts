@@ -1,9 +1,13 @@
 import xmindParser from './../src'
 const path = require('path')
 const fs = require('fs')
-const testFilePath = path.join(__dirname, 'tmp/test.xmind')
+const testFilePath = path.join(__dirname, 'tmp/哪有没时间这回事.xmind')
 
 const parser = new xmindParser()
+parser.xmindToJSON(testFilePath)
+// describe('xmind转json的本地路径测试', function () {
+//     xmindToJSON(testFilePath)
+// });
 /*
 const xmindToJSON = (data) => {
     it('异步返回kityminder（脑图）的json格式', (done) => {

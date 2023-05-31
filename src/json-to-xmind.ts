@@ -1,4 +1,4 @@
-import {guid, task, kityMinder,isClient} from "./utils";
+import {guid, task, kityMinder,isServer} from "./utils";
 import _ from 'lodash';
 import JSZip from 'jszip'
 import xmind from 'xmind'
@@ -9,7 +9,7 @@ const {
     Marker,
     Zipper,
     Dumper
-} = isClient ? require('xmind') : Object.keys(xmind || {}).length ? xmind : window;
+} = isServer ? require('xmind') : Object.keys(xmind || {}).length ? xmind : window;
 
 
 export default class parser {
@@ -55,7 +55,7 @@ export default class parser {
             cidData[id] = topic.add({title: text}).cid().toString()
             setMarker(res.data, cidData[id])
         })
-        if (isClient) {
+        if (isServer) {
             const path = outPath || './'
             const zipper = new Zipper({path, workbook, filename: outFileName});
             await zipper.save()
